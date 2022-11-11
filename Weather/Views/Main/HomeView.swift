@@ -8,20 +8,19 @@
 import SwiftUI
 import BottomSheet
 struct HomeView: View {
-    //MARK: - VARS & Outlets
     ///ENUM Botton sheet position
     enum BottomSheetPosition: CGFloat,CaseIterable {
         case top = 0.83  // 702/844
         case middle = 0.385 // 325/844
     }
+    //MARK: - VARS & Outlets
     @State var bottomSheetPosition: BottomSheetPosition = .middle
     @State var BottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
     @State var hasDragged: Bool = false
-    
     var BottonSheetTranslationProrated: CGFloat{
         (BottomSheetTranslation - BottomSheetPosition.middle.rawValue)/(BottomSheetPosition.top.rawValue - BottomSheetPosition.middle.rawValue)
     }
-    
+    //MARK: - Body
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
@@ -31,8 +30,7 @@ struct HomeView: View {
                 let imageOffset = screenHeight + 36
                 ZStack{
                     //MARK: - Background
-                    Color.background
-                        .ignoresSafeArea()
+                    Color.background.ignoresSafeArea()
                     //MARK: - Background Image
                     Image("Background")
                         .resizable()
