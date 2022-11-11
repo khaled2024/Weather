@@ -6,43 +6,63 @@
 //
 
 import SwiftUI
-
+import BottomSheet
 struct HomeView: View {
+    /// ENUM BOTTOM SHEET POSITION
+    enum BottomSheetPosition: CGFloat,CaseIterable {
+        case top = 0.83  // 702/844
+        case middle = 0.385 // 325/844
+    }
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
     var body: some View {
-        ZStack{
-            //MARK: - Background
-            Color.background.ignoresSafeArea()
-            //MARK: - Background Image
-            Image("Background")
-                .scaledToFit()
-                .ignoresSafeArea()
-            //MARK: - House image
-            Image("House")
-                .frame(maxHeight: .infinity,alignment: .top)
-                .padding(.top, 257)
-            //MARK: - Current Weather
-            VStack{
-                Text("Cairo")
-                    .font(.largeTitle)
+        NavigationView {
+            ZStack{
+                //MARK: - Background
+                Color.background.ignoresSafeArea()
+                //MARK: - Background Image
+                Image("Background")
+                    .scaledToFit()
+                    .ignoresSafeArea()
+                //MARK: - House image
+                Image("House")
+                    .frame(maxHeight: .infinity,alignment: .top)
+                    .padding(.top, 257)
+                //MARK: - Current Weather
                 VStack{
-                    Text(attributedString)
-//                    Text("19°")
-//                        .foregroundColor(.primary)
-//                        .font(Font.system(size: 96, weight: .thin))
-//                    +
-//                    Text("\n ")
-//                    +
-//                    Text("Mostly Clear")
-//                        .font(.title3)
-//                        .fontWeight(.semibold)
-//                        .foregroundColor(.secondary)
-                    Text("H:24°    L:18°")
-                        .font(.title3)
-                        .fontWeight(.semibold)
+                    Text("Cairo")
+                        .font(.largeTitle)
+                    VStack{
+                        Text(attributedString)
+                        //                    Text("19°")
+                        //                        .foregroundColor(.primary)
+                        //                        .font(Font.system(size: 96, weight: .thin))
+                        //                    +
+                        //                    Text("\n ")
+                        //                    +
+                        //                    Text("Mostly Clear")
+                        //                        .font(.title3)
+                        //                        .fontWeight(.semibold)
+                        //                        .foregroundColor(.secondary)
+                        Text("H:24°    L:18°")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding(.top, 51)
+                //MARK: - Bottom sheet position
+                BottomSheetView(position: $bottomSheetPosition) {
+            
+                } content: {
+                    ForcastView()
+                }
+
+                //MARK: - TabBar
+                Tabbar(action: {
+                    bottomSheetPosition = .top
+                })
             }
-            .padding(.top, 51)
+            .navigationBarHidden(true)
         }
     }
     private var attributedString: AttributedString{
