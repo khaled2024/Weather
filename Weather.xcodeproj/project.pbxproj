@@ -18,6 +18,8 @@
 		EAC6D728291E8CB20029C057 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = EAC6D727291E8CB20029C057 /* BottomSheet */; };
 		EAC6D72A291E8FE70029C057 /* ForcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6D729291E8FE70029C057 /* ForcastView.swift */; };
 		EAC6D72C291EABAA0029C057 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6D72B291EABAA0029C057 /* Blur.swift */; };
+		EAD8884129203E0000E2BE30 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8884029203DFF00E2BE30 /* SegmentedControl.swift */; };
+		EAD8884329203E1000E2BE30 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8884229203E0F00E2BE30 /* ForecastModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		EAC6D724291E894E0029C057 /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		EAC6D729291E8FE70029C057 /* ForcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastView.swift; sourceTree = "<group>"; };
 		EAC6D72B291EABAA0029C057 /* Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		EAD8884029203DFF00E2BE30 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		EAD8884229203E0F00E2BE30 /* ForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		EA7B11DB291DB22B008A538E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAD8884229203E0F00E2BE30 /* ForecastModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC6D72B291EABAA0029C057 /* Blur.swift */,
+				EAD8884029203DFF00E2BE30 /* SegmentedControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -220,12 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7B11CF291DAEF5008A538E /* ContentView.swift in Sources */,
+				EAD8884129203E0000E2BE30 /* SegmentedControl.swift in Sources */,
 				EAC6D723291E7CF30029C057 /* Tabbar.swift in Sources */,
 				EAC6D72C291EABAA0029C057 /* Blur.swift in Sources */,
 				EA7B11E4291DB2C3008A538E /* HomeView.swift in Sources */,
 				EA7B11E2291DB29D008A538E /* Extensions.swift in Sources */,
 				EA7B11CD291DAEF5008A538E /* WeatherApp.swift in Sources */,
 				EAC6D72A291E8FE70029C057 /* ForcastView.swift in Sources */,
+				EAD8884329203E1000E2BE30 /* ForecastModel.swift in Sources */,
 				EAC6D725291E894F0029C057 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

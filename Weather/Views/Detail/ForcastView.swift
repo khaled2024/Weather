@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ForcastView: View {
      var BottonSheetTranslationProrated: CGFloat = 1
+    @State var selection = 0
     var body: some View {
         ScrollView{
-            
+            VStack(spacing: 20){
+                SegmentedControl(selection: $selection)
+            }
         }
         .backgroundBlur(radius: 25, opaque: true)
         .background(Color.bottomSheetBackground)

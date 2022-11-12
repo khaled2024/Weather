@@ -58,7 +58,7 @@ struct HomeView: View {
                     .offset(y: -BottonSheetTranslationProrated * 46)
                     //MARK: - Bottom sheet position
                     BottomSheetView(position: $bottomSheetPosition) {
-                        Text(BottonSheetTranslationProrated.formatted())
+//                        Text(BottonSheetTranslationProrated.formatted())
                     } content: {
                         ForcastView(BottonSheetTranslationProrated: BottonSheetTranslationProrated)
                     }
