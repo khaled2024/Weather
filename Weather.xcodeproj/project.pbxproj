@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA5C5ED6292127BF003693E8 /* ForcastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C5ED5292127BF003693E8 /* ForcastCard.swift */; };
 		EA7B11CD291DAEF5008A538E /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B11CC291DAEF5008A538E /* WeatherApp.swift */; };
 		EA7B11CF291DAEF5008A538E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B11CE291DAEF5008A538E /* ContentView.swift */; };
 		EA7B11D1291DAEFA008A538E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7B11D0291DAEFA008A538E /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA5C5ED5292127BF003693E8 /* ForcastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastCard.swift; sourceTree = "<group>"; };
 		EA7B11C9291DAEF5008A538E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7B11CC291DAEF5008A538E /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		EA7B11CE291DAEF5008A538E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				EAC6D72B291EABAA0029C057 /* Blur.swift */,
 				EAD8884029203DFF00E2BE30 /* SegmentedControl.swift */,
+				EA5C5ED5292127BF003693E8 /* ForcastCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				EA7B11E4291DB2C3008A538E /* HomeView.swift in Sources */,
 				EA7B11E2291DB29D008A538E /* Extensions.swift in Sources */,
 				EA7B11CD291DAEF5008A538E /* WeatherApp.swift in Sources */,
+				EA5C5ED6292127BF003693E8 /* ForcastCard.swift in Sources */,
 				EAC6D72A291E8FE70029C057 /* ForcastView.swift in Sources */,
 				EAD8884329203E1000E2BE30 /* ForecastModel.swift in Sources */,
 				EAC6D725291E894F0029C057 /* Shapes.swift in Sources */,

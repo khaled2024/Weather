@@ -22,7 +22,6 @@ struct SegmentedControl: View {
                     Text("Hourly Forecast")
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
-                
                 Button {
                     withAnimation(.easeInOut(duration: 0.5)) {
                         selection = 1

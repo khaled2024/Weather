@@ -2,7 +2,7 @@
 //  ForecastModel.swift
 //  Weather
 //
-//  Created by Dara To on 2022-06-19.
+//  Created by Khaled Hussien
 //
 
 import Foundation
@@ -11,7 +11,6 @@ enum ForecastPeriod {
     case hourly
     case daily
 }
-
 enum Weather: String {
     case clear = "Clear"
     case cloudy = "Cloudy"
